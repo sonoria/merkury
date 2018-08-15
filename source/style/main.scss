@@ -1,0 +1,143 @@
+$blue: #5584ff;
+$gray-blue: #8492af;
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.caption{
+	color: white;
+	font-size: 60px;
+	text-align: center;
+	font-weight: 100;
+}
+
+.btn{
+	display: flex;
+	margin: auto;
+	text-align: center;
+	text-decoration: none;	
+	font-size: 18px;
+	border: 1px $blue solid;
+	width: 200px;
+	height: 50px;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-color: $blue;
+	transition: .5s;
+}
+
+.btn:hover{
+	color: $blue;
+	background: none;
+}
+
+.btn:active{
+	box-shadow: 0 0 50px rgba(0,0,0,0.4) inset;
+	color: #ddd;
+	transition: .3s;
+}
+
+.home{
+	background: url(../img/home.jpg) no-repeat top center;
+
+	.menu-block-nav{
+		padding: 60px 8% 0 8%;
+		display: flex;
+		justify-content: space-between;
+
+
+		.menu-logo{
+
+			.logo__img{
+				width: 170px;
+			}
+		}
+
+		.menu-block{
+			position: relative;
+			right: 0;
+			width: 50%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.menu_link{
+				font-size: 18px;
+				color: white;
+				text-decoration: none;	
+				transition: .3s;
+			}
+
+			.menu_link:hover{
+				color: $blue;
+				transition: .3s;
+			}
+
+			.menu_login{
+				color: $blue;
+				text-decoration: none;	
+				font-size: 18px;
+				border: 1px $blue solid;
+				width: 120px;
+				height: 45px;
+				border-radius: 50px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transition: .5s;
+			}
+
+			.menu_login:hover{
+				color: white;
+				background-color: $blue;
+				transition: .5s;
+			}
+
+			.menu_login:active{
+				box-shadow: 0 0 50px rgba(0,0,0,0.4) inset;
+				color: #ddd;
+				transition: .1s;
+			}
+		}
+	}
+
+	.main{
+		margin: 140px 0 100px 0;
+
+		h2{
+			font-size: 36px;
+			color: $gray-blue;
+			text-align: center;
+			margin: 20px 0 75px 0;
+		}
+
+		.dash{
+			display: flex;
+			margin: auto;
+			position: relative;
+			top: 90px;
+		}
+	}
+}
+
+.q{
+	height: 100vh;
+
+}
+
+.stickytop{
+	top: 0;
+	padding: 20px 8% 20px 8% !important;
+	position: fixed;
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+	background-color: #0e1a35;
+	width: 84%;
+}
